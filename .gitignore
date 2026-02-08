@@ -1,0 +1,52 @@
+# Environment variables
+.env
+
+# Cache directory
+cache/
+
+# Generated reports
+reports/
+*.pdf
+
+# Cloned quickstart repos (for RAG indexing)
+data/repos/
+
+# AI assistants
+.claude/
+.cursor/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+*.egg-info/
+issue_review.egg-info/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.cursorignore

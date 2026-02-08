@@ -1,0 +1,55 @@
+metadata:
+  description: Official published quickstarts from ai-quickstart-pub
+  source: https://github.com/rh-ai-quickstart/ai-quickstart-pub
+  last_synced: '2026-02-05T19:12:59.732576'
+quickstarts:
+- id: llm-cpu-serving
+  name: Llm Cpu Serving
+  repo: llm-cpu-serving
+  description: This quickstart will serve a small language model on CPUs, using vLLM
+    inference runtime
+  url: https://github.com/rh-ai-quickstart/llm-cpu-serving
+- id: RAG
+  name: Rag
+  repo: RAG
+  description: A QuickStart that allows users to experiment with retrieval-augmented
+    generation (RAG) in a streamlined chat environment.
+  url: https://github.com/rh-ai-quickstart/RAG
+- id: lls-observability
+  name: Lls Observability
+  repo: lls-observability
+  description: Llama Stack Observability quickstart
+  url: https://github.com/rh-ai-quickstart/lls-observability
+- id: ai-virtual-agent
+  name: Ai Virtual Agent
+  repo: ai-virtual-agent
+  description: Deploy AI agents with knowledge bases and tools on OpenShift
+  url: https://github.com/rh-ai-quickstart/ai-virtual-agent
+- id: guardrailing-llms
+  name: Guardrailing Llms
+  repo: guardrailing-llms
+  description: Guardrailing LLMs
+  url: https://github.com/rh-ai-quickstart/guardrailing-llms
+- id: product-recommender-system
+  name: Product Recommender System
+  repo: product-recommender-system
+  description: Red Hat AI quickstart Recommendation System algorithm, for  interactions
+    between users and products in an online store.
+  url: https://github.com/rh-ai-quickstart/product-recommender-system
+- id: openshift-ai-observability-summarizer
+  name: Openshift Ai Observability Summarizer
+  repo: openshift-ai-observability-summarizer
+  description: AI quickstart that provides interactive dashboard to analyze AI Model
+    Performance as well as Openshift metrics collected from Prometheus
+  url: https://github.com/rh-ai-quickstart/openshift-ai-observability-summarizer
+- id: it-self-service-agent
+  name: It Self Service Agent
+  repo: it-self-service-agent
+  description: null
+  url: https://github.com/rh-ai-quickstart/it-self-service-agent
+- id: ansible-log-analysis
+  name: Ansible Log Analysis
+  repo: ansible-log-analysis
+  description: An AI agent for AAP clusters that detects Ansible log errors, suggests
+    step-by-step fixes using cluster-wide logs, and routes issues to the right experts.
+  url: https://github.com/rh-ai-quickstart/ansible-log-analysis

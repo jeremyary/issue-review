@@ -1,0 +1,48 @@
+[project]
+name = "issue-review"
+version = "0.1.0"
+description = "Tool to review GitHub quickstart suggestion issues for overlap with existing quickstarts"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "requests>=2.31.0",
+    "rich>=13.0.0",
+    "python-dotenv>=1.0.0",
+    "fpdf2>=2.7.0",
+    "pyyaml>=6.0.0",
+    # LangChain ecosystem
+    "langchain>=0.3.0",
+    "langgraph>=0.2.0",
+    "langfuse>=2.0.0",
+    # OpenAI SDK (for Anthropic's OpenAI-compatible endpoint)
+    "openai>=1.0.0",
+    # RAG / Vector store
+    "psycopg2-binary>=2.9.0",
+    "sentence-transformers>=2.2.0",
+    "pgvector>=0.2.0",
+]
+
+[project.scripts]
+issue-review = "main:main"
+
+[tool.setuptools]
+py-modules = [
+    "main",
+    "analysis_store",
+    "comment_generator",
+    "config",
+    "data_sources",
+    "prompts",
+    "report_generator",
+]
+packages = [
+    "data",
+    "llm",
+    "agents",
+    "indexer",
+    "tools",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

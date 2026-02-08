@@ -1,0 +1,339 @@
+# OpenShift AI Feature Catalog
+# Used by the Platform Specialist agent to identify which features
+# a quickstart uses and whether they demonstrate new platform capabilities.
+
+features:
+  # ── Model Serving ──────────────────────────────────────────────
+  - id: kserve
+    name: KServe (Single-model Serving)
+    category: Model Serving
+    description: Serverless inference for ML models via the single-model serving platform
+    keywords:
+      - kserve
+      - inferenceservice
+      - serverless inference
+      - single-model serving
+
+  - id: modelmesh
+    name: ModelMesh (Multi-model Serving)
+    category: Model Serving
+    description: Multi-model serving platform for running many models on shared infrastructure
+    keywords:
+      - modelmesh
+      - multi-model serving
+      - model mesh
+
+  - id: vllm
+    name: vLLM Inference
+    category: Model Serving
+    description: High-throughput LLM inference engine
+    keywords:
+      - vllm
+      - vllm serving
+      - high-throughput inference
+
+  - id: tgis
+    name: Text Generation Inference Server
+    category: Model Serving
+    description: IBM's text generation inference runtime
+    keywords:
+      - tgis
+      - text generation inference
+      - text-generation-inference
+
+  - id: caikit
+    name: Caikit Runtime
+    category: Model Serving
+    description: Runtime framework for model inference used alongside vLLM and TGIS
+    keywords:
+      - caikit
+      - caikit-nlp
+      - caikit runtime
+      - caikit-tgis
+
+  - id: openvino
+    name: OpenVINO Model Server
+    category: Model Serving
+    description: Intel's inference optimization toolkit and default multi-model runtime
+    keywords:
+      - openvino
+      - ovms
+      - openvinomodelserver
+      - intel inference
+
+  - id: nvidia_nim
+    name: NVIDIA NIM
+    category: Model Serving
+    description: NVIDIA's optimized inference microservices for GPU-accelerated models
+    keywords:
+      - nvidia nim
+      - nim serving
+      - nim microservice
+
+  - id: custom_runtime
+    name: Custom Serving Runtime
+    category: Model Serving
+    description: Bring-your-own model serving runtime (Triton, etc.)
+    keywords:
+      - custom serving runtime
+      - custom runtime
+      - triton inference
+      - triton server
+
+  - id: cpu_inference
+    name: CPU-only Inference
+    category: Model Serving
+    description: Running models on CPU without GPU requirements
+    keywords:
+      - cpu inference
+      - cpu serving
+      - cpu-only inference
+      - cpu-only
+
+  # ── Model Training & Fine-tuning ──────────────────────────────
+  - id: training
+    name: Model Training (Kubeflow Training Operator)
+    category: Model Training
+    description: Distributed model training via the Kubeflow Training Operator
+    keywords:
+      - kubeflow training
+      - training operator
+      - model training
+      - distributed training
+      - pytorch fsdp
+      - sfttrainer
+
+  - id: fine_tuning
+    name: Fine-tuning (LoRA / QLoRA)
+    category: Model Training
+    description: Parameter-efficient fine-tuning techniques for LLMs
+    keywords:
+      - fine-tuning
+      - fine tuning
+      - lora
+      - qlora
+      - peft
+      - adapter training
+
+  - id: instructlab
+    name: InstructLab
+    category: Model Training
+    description: Red Hat's synthetic data generation and community-driven model fine-tuning
+    keywords:
+      - instructlab
+      - ilab
+      - synthetic data generation
+      - lab method
+
+  # ── ML Pipelines ──────────────────────────────────────────────
+  - id: pipelines
+    name: Data Science Pipelines
+    category: ML Pipelines
+    description: Orchestrated ML workflows via Kubeflow Pipelines
+    keywords:
+      - data science pipeline
+      - kubeflow pipeline
+      - ml pipeline
+      - dsp
+      - kfp
+      - workflow orchestration
+
+  - id: feature_store
+    name: Feature Store (Feast)
+    category: ML Pipelines
+    description: Feature engineering, storage, and online/offline serving
+    keywords:
+      - feast
+      - feature store
+      - feature engineering
+      - feature serving
+      - online features
+      - offline features
+
+  # ── Model Management ──────────────────────────────────────────
+  - id: model_registry
+    name: Model Registry
+    category: Model Management
+    description: Central repository for model versioning, metadata, and lifecycle tracking
+    keywords:
+      - model registry
+      - model versioning
+      - model metadata
+      - model lifecycle
+      - model catalog
+
+  - id: lm_eval
+    name: LM-Eval (AI Evaluation)
+    category: Model Management
+    description: Model evaluation and comparison framework
+    keywords:
+      - lm-eval
+      - lm eval
+      - model evaluation
+      - model comparison
+      - eval harness
+
+  # ── Governance & Trust ────────────────────────────────────────
+  - id: guardrails
+    name: Guardrails Orchestrator
+    category: Governance & Trust
+    description: Content safety and compliance controls for LLM inputs/outputs
+    keywords:
+      - guardrails orchestrator
+      - llama guard
+      - content moderation
+      - fms orchestr8
+      - guardrails service
+
+  - id: trustyai
+    name: TrustyAI
+    category: Governance & Trust
+    description: Explainability, fairness, bias detection, and data drift monitoring
+    keywords:
+      - trustyai
+      - explainability
+      - fairness monitoring
+      - bias detection
+      - data drift
+
+  # ── Observability ─────────────────────────────────────────────
+  - id: opentelemetry
+    name: OpenTelemetry Tracing
+    category: Observability
+    description: Distributed tracing for AI applications
+    keywords:
+      - opentelemetry
+      - otel
+      - otel collector
+      - distributed tracing
+      - tempo
+
+  - id: prometheus
+    name: Prometheus Metrics
+    category: Observability
+    description: Metrics collection, alerting, and monitoring dashboards
+    keywords:
+      - prometheus
+      - alertmanager
+      - grafana dashboard
+      - prometheus metrics
+
+  # ── Data & Storage ────────────────────────────────────────────
+  - id: vector_db
+    name: Vector Database
+    category: Data & Storage
+    description: Vector embeddings storage and similarity search
+    keywords:
+      - pgvector
+      - vector database
+      - vector store
+      - similarity search
+      - milvus
+      - qdrant
+      - chroma
+      - elasticsearch vector
+
+  - id: object_storage
+    name: Object Storage (S3/MinIO)
+    category: Data & Storage
+    description: Scalable object storage for models and data
+    keywords:
+      - s3 bucket
+      - minio
+      - object storage
+      - s3 compatible
+
+  # ── Agent Frameworks ──────────────────────────────────────────
+  - id: llamastack
+    name: LlamaStack
+    category: Agent Frameworks
+    description: Meta's unified API for LLM applications
+    keywords:
+      - llamastack
+      - llama stack
+      - llama-stack
+
+  - id: langgraph
+    name: LangGraph
+    category: Agent Frameworks
+    description: Graph-based agent orchestration
+    keywords:
+      - langgraph
+      - lang graph
+      - langchain agent
+      - agent graph
+
+  - id: mcp
+    name: Model Context Protocol (MCP)
+    category: Agent Frameworks
+    description: Standardized context protocol for AI assistants
+    keywords:
+      - model context protocol
+      - mcp server
+      - mcp client
+
+  # ── RAG Components ────────────────────────────────────────────
+  - id: rag
+    name: RAG (Retrieval Augmented Generation)
+    category: RAG Components
+    description: Knowledge retrieval for LLM grounding
+    keywords:
+      - retrieval augmented generation
+      - rag pipeline
+      - document retrieval
+      - rag application
+
+  - id: embeddings
+    name: Embedding Models
+    category: RAG Components
+    description: Text embedding generation for semantic search
+    keywords:
+      - embedding model
+      - sentence transformers
+      - text embeddings
+      - bge embedding
+
+  # ── Development Environment ───────────────────────────────────
+  - id: workbench
+    name: OpenShift AI Workbench
+    category: Development Environment
+    description: Jupyter-based development environment
+    keywords:
+      - workbench
+      - jupyter notebook
+      - data science notebook
+      - notebook image
+
+  - id: ds_projects
+    name: Data Science Projects
+    category: Development Environment
+    description: RHOAI project abstraction for organizing workloads, storage, and connections
+    keywords:
+      - data science project
+      - ds project
+      - openshift ai project
+      - data connection
+
+  # ── Infrastructure ────────────────────────────────────────────
+  - id: distributed_workloads
+    name: Distributed Workloads (Ray / CodeFlare)
+    category: Infrastructure
+    description: Distributed computing via Ray clusters managed by CodeFlare and KubeRay
+    keywords:
+      - codeflare
+      - kuberay
+      - ray cluster
+      - ray job
+      - rayjob
+      - distributed workload
+
+  - id: accelerator_profiles
+    name: Accelerator Profiles / GPU Management
+    category: Infrastructure
+    description: GPU and accelerator resource configuration and allocation
+    keywords:
+      - accelerator profile
+      - gpu operator
+      - gpu partitioning
+      - nvidia gpu
+      - gpu resource

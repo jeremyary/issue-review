@@ -1,0 +1,31 @@
+# Local development stack
+#
+# Prerequisites:
+#   1. Run: docker-compose up -d
+#   2. Set the following in your .env:
+#      - DATABASE_URL=postgresql://issue_review:issue_review@localhost:5432/issue_review
+#      - LLM_BASE_URL and LLM_API_KEY for your LLM provider
+
+version: '3.8'
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: issue_review
+      POSTGRES_PASSWORD: issue_review
+      POSTGRES_DB: issue_review
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./indexer/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U issue_review"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+volumes:
+  pgdata:

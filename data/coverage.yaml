@@ -1,0 +1,260 @@
+metadata:
+  description: Auto-generated feature coverage from published quickstarts
+  source: Detected from quickstart content (README, Helm values, source code)
+  last_synced: '2026-02-08T11:31:12.380470'
+coverage:
+  RAG:
+    features:
+    - kserve
+    - vllm
+    - instructlab
+    - pipelines
+    - guardrails
+    - opentelemetry
+    - vector_db
+    - object_storage
+    - llamastack
+    - mcp
+    - rag
+    - accelerator_profiles
+  ai-virtual-agent:
+    features:
+    - vllm
+    - instructlab
+    - opentelemetry
+    - vector_db
+    - object_storage
+    - llamastack
+    - mcp
+    - embeddings
+  ansible-log-analysis:
+    features:
+    - vllm
+    - instructlab
+    - pipelines
+    - model_registry
+    - opentelemetry
+    - vector_db
+    - object_storage
+    - langgraph
+    - mcp
+    - embeddings
+  guardrailing-llms:
+    features:
+    - kserve
+    - vllm
+    - guardrails
+    - trustyai
+    - opentelemetry
+    - prometheus
+    - workbench
+    - ds_projects
+    - accelerator_profiles
+  it-self-service-agent:
+    features:
+    - instructlab
+    - lm_eval
+    - guardrails
+    - opentelemetry
+    - vector_db
+    - object_storage
+    - llamastack
+    - langgraph
+    - mcp
+  llm-cpu-serving:
+    features:
+    - kserve
+    - vllm
+    - instructlab
+    - workbench
+    - ds_projects
+  lls-observability:
+    features:
+    - vllm
+    - guardrails
+    - opentelemetry
+    - vector_db
+    - llamastack
+    - mcp
+    - accelerator_profiles
+  openshift-ai-observability-summarizer:
+    features:
+    - kserve
+    - vllm
+    - fine_tuning
+    - instructlab
+    - opentelemetry
+    - prometheus
+    - object_storage
+    - llamastack
+    - mcp
+  product-recommender-system:
+    features:
+    - kserve
+    - modelmesh
+    - vllm
+    - training
+    - instructlab
+    - pipelines
+    - feature_store
+    - model_registry
+    - vector_db
+    - object_storage
+    - embeddings
+    - ds_projects
+    - accelerator_profiles
+feature_coverage:
+  kserve:
+    quickstarts:
+    - RAG
+    - guardrailing-llms
+    - llm-cpu-serving
+    - openshift-ai-observability-summarizer
+    - product-recommender-system
+    count: 5
+  vllm:
+    quickstarts:
+    - RAG
+    - ai-virtual-agent
+    - ansible-log-analysis
+    - guardrailing-llms
+    - llm-cpu-serving
+    - lls-observability
+    - openshift-ai-observability-summarizer
+    - product-recommender-system
+    count: 8
+  instructlab:
+    quickstarts:
+    - RAG
+    - ai-virtual-agent
+    - ansible-log-analysis
+    - it-self-service-agent
+    - llm-cpu-serving
+    - openshift-ai-observability-summarizer
+    - product-recommender-system
+    count: 7
+  pipelines:
+    quickstarts:
+    - RAG
+    - ansible-log-analysis
+    - product-recommender-system
+    count: 3
+  guardrails:
+    quickstarts:
+    - RAG
+    - guardrailing-llms
+    - it-self-service-agent
+    - lls-observability
+    count: 4
+  opentelemetry:
+    quickstarts:
+    - RAG
+    - ai-virtual-agent
+    - ansible-log-analysis
+    - guardrailing-llms
+    - it-self-service-agent
+    - lls-observability
+    - openshift-ai-observability-summarizer
+    count: 7
+  vector_db:
+    quickstarts:
+    - RAG
+    - ai-virtual-agent
+    - ansible-log-analysis
+    - it-self-service-agent
+    - lls-observability
+    - product-recommender-system
+    count: 6
+  object_storage:
+    quickstarts:
+    - RAG
+    - ai-virtual-agent
+    - ansible-log-analysis
+    - it-self-service-agent
+    - openshift-ai-observability-summarizer
+    - product-recommender-system
+    count: 6
+  llamastack:
+    quickstarts:
+    - RAG
+    - ai-virtual-agent
+    - it-self-service-agent
+    - lls-observability
+    - openshift-ai-observability-summarizer
+    count: 5
+  mcp:
+    quickstarts:
+    - RAG
+    - ai-virtual-agent
+    - ansible-log-analysis
+    - it-self-service-agent
+    - lls-observability
+    - openshift-ai-observability-summarizer
+    count: 6
+  rag:
+    quickstarts:
+    - RAG
+    count: 1
+  accelerator_profiles:
+    quickstarts:
+    - RAG
+    - guardrailing-llms
+    - lls-observability
+    - product-recommender-system
+    count: 4
+  embeddings:
+    quickstarts:
+    - ai-virtual-agent
+    - ansible-log-analysis
+    - product-recommender-system
+    count: 3
+  model_registry:
+    quickstarts:
+    - ansible-log-analysis
+    - product-recommender-system
+    count: 2
+  langgraph:
+    quickstarts:
+    - ansible-log-analysis
+    - it-self-service-agent
+    count: 2
+  trustyai:
+    quickstarts:
+    - guardrailing-llms
+    count: 1
+  prometheus:
+    quickstarts:
+    - guardrailing-llms
+    - openshift-ai-observability-summarizer
+    count: 2
+  workbench:
+    quickstarts:
+    - guardrailing-llms
+    - llm-cpu-serving
+    count: 2
+  ds_projects:
+    quickstarts:
+    - guardrailing-llms
+    - llm-cpu-serving
+    - product-recommender-system
+    count: 3
+  lm_eval:
+    quickstarts:
+    - it-self-service-agent
+    count: 1
+  fine_tuning:
+    quickstarts:
+    - openshift-ai-observability-summarizer
+    count: 1
+  modelmesh:
+    quickstarts:
+    - product-recommender-system
+    count: 1
+  training:
+    quickstarts:
+    - product-recommender-system
+    count: 1
+  feature_store:
+    quickstarts:
+    - product-recommender-system
+    count: 1
